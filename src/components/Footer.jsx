@@ -17,7 +17,7 @@ const Footer = () => {
             </style>
 
             <footer>
-                <p>&copy; 2024 Rebecca Overseas. All rights reserved.</p>
+                <p>&copy; 2026 Rebecca Overseas. All rights reserved.</p>
             </footer>
         </>
     );

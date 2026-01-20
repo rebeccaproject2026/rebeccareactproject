@@ -162,7 +162,7 @@ const MainFooter = () => {
       <div className="border-t border-gray-700 py-4">
         <div className="container mx-auto px-4">
           <p className="text-center text-gray-400 text-sm">
-            &copy; 2024 Rebecca. All Rights Reserved.
+            &copy; 2026 Rebecca. All Rights Reserved.
           </p>
         </div>
       </div>

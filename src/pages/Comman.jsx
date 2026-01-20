@@ -275,8 +275,8 @@ export const productsData = [
         description:
           "High yielding, good market demand, excellent for fresh market and processing.",
         availability: "In Stock",
-        flowerColor: "White",
-        flowerShape: "Long pods",
+        fruitColor: "White",
+        fruitShape: "Long pods",
         plantHeight: "70–90 cm",
         maturity: "60–70 Days",
         additionalInfo: "Early maturing, pest resistant,Heat tolerant, high yield",
