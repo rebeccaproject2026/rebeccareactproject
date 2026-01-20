@@ -1,0 +1,62 @@
+.product-card {
+  background-color: #fff;
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  padding: 1.25rem;
+  text-align: center;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.product-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+}
+
+.product-card h3 {
+  color: #333;
+  font-size: 1.25rem;
+  margin-bottom: 1rem;
+  font-weight: 600;
+}
+
+.card-buttons {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.btn-view,
+.btn-download {
+  padding: 0.6rem 1.5rem;
+  border: none;
+  border-radius: 5px;
+  font-size: 0.9rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.3s;
+  min-width: 100px;
+}
+
+.btn-view {
+  background-color: #fff;
+  color: #333;
+  border: 2px solid #333;
+}
+
+.btn-view:hover {
+  background-color: #f5f5f5;
+  border-color: #2c5530;
+  color: #2c5530;
+}
+
+.btn-download {
+  background-color: #333;
+  color: #fff;
+}
+
+.btn-download:hover {
+  background-color: #2c5530;
+  transform: translateY(-2px);
+}
