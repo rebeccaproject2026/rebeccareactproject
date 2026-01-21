@@ -125,7 +125,7 @@ const ProductDetail = () => {
               <div className="space-y-4 sm:space-y-6">
                 <div>
                   <h2 className="text-xl sm:text-2xl tracking-wider text-gray-800 mb-3 sm:mb-4">
-                    {product.name}
+                    {product.name} - {product.label}
                   </h2>
 
                   {/* Rating */}

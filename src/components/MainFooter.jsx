@@ -1,6 +1,8 @@
 import { Link, useNavigate } from "react-router-dom";
 import rebeccaUnicornLogo from "../assets/img/rbc2.png";
 import { allSliderProducts } from "../pages/Comman";
+import { MdOutlineAttachEmail, MdWifiCalling } from "react-icons/md";
+import { IoEarth } from "react-icons/io5";
 
 const MainFooter = () => {
   const navigate = useNavigate();
@@ -126,8 +128,10 @@ const MainFooter = () => {
               </div>
 
               <div className="space-y-1">
-                <p>
-                  <span className="font-medium text-white">Email:</span>{" "}
+                <p className="flex items-center gap-2">
+                  <span className="font-medium text-white shrink-0">
+                    <MdOutlineAttachEmail />
+                  </span>
                   <a
                     href="mailto:rebeccaoverseascompany@gmail.com"
                     className="hover:text-white transition-colors"
@@ -136,13 +140,17 @@ const MainFooter = () => {
                   </a>
                 </p>
 
-                <p>
-                  <span className="font-medium text-white">Customer Care:</span>{" "}
+                <p className="flex items-center gap-2">
+                  <span className="font-medium text-white shrink-0">
+                    <MdWifiCalling />
+                  </span>
                   +91 78 74 77 66 88
                 </p>
 
-                <p>
-                  <span className="font-medium text-white">Website:</span>{" "}
+                <p className="flex items-center gap-2">
+                  <span className="font-medium text-white shrink-0">
+                    <IoEarth />
+                  </span>
                   <a
                     href="https://www.rebeccaoverseas.com"
                     target="_blank"
