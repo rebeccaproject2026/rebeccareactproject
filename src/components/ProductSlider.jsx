@@ -5,13 +5,20 @@ import { allSliderProducts } from "../pages/Comman";
 
 const ProductSlider = () => {
   const navigate = useNavigate();
+  const marigoldProducts = allSliderProducts.filter(
+    (p) => (p?.name || "").toLowerCase() === "marigold"
+  );
+  const otherProducts = allSliderProducts.filter(
+    (p) => (p?.name || "").toLowerCase() !== "marigold"
+  );
+  const sliderProducts = [...marigoldProducts, ...otherProducts];
 
   const settings = {
     dots: true,
     infinite: true,
     speed: 500,
     slidesToShow: 4,
-    slidesToScroll: 3,
+    slidesToScroll: 4,
     variableWidth: false,
     arrows: true,
     responsive: [
@@ -75,7 +82,7 @@ const ProductSlider = () => {
         {/* Slider */}
         <div className="product-slider-wrapper pb-8">
           <Slider {...settings}>
-            {allSliderProducts.map((product) => (
+            {sliderProducts.map((product) => (
               <div key={product.id} className="px-2 sm:px-3 h-full">
                 <div className="bg-white overflow-hidden shadow cursor-pointer max-w-[320px] mx-auto w-full h-full flex flex-col">
                   {/* Image Wrapper for Padding */}
