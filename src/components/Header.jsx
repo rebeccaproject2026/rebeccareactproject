@@ -11,8 +11,8 @@ const Header = () => {
           </Link>
         </div>
         <div className="contact-info">
-          <p>Email: info@rebeccaoverseas.com</p>
-          <p>Phone: +91 XXXXX XXXXX</p>
+          <p>Email: rebeccaoverseascompany@gmail.com</p>
+          <p>Phone: +91 78 74 77 66 88</p>
         </div>
       </div>
       <nav className="p-4 header-nav">

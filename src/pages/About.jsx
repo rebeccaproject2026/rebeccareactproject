@@ -10,12 +10,11 @@ import { useEffect, useRef } from "react";
 import EmpNumberImg from "../assets/images/achvmnt/1.png";
 import handShakeImg from "../assets/images/achvmnt/2.png";
 import locationImg from "../assets/images/achvmnt/3.png";
-import daysExpImg from "../assets/images/achvmnt/4.png";
 import cordialImg from "../assets/svg/Aboutus/1.svg";
 import expworkerImg from "../assets/svg/Aboutus/3.svg";
 import MordernImg from "../assets/svg/Aboutus/2.svg";
 import WhyUsImg from "../assets/images/why-us/whyus.jpg";
-import farmImage from "../assets/images/Background/farm3.jpg";
+import farmImage from "../assets/images/Background/bg.jpg";
 import ourhistoryImage from "../assets/images/history/history.jpg";
 import aboutusImg from "../assets/images/aboutourcompany/aboutcompany.jpg";
 import { FiCheckSquare } from "react-icons/fi";
@@ -92,14 +91,6 @@ const About = () => {
                 varieties are appropriate for the both commercial outdoor crop
                 growers and greenhouse plant raisers.
               </p>
-              {/* <p className="text-gray-600 text-sm leading-relaxed">
-                The Company’s Strategy is to create new hybrids verities with
-                novel features that combine high yielding and friendliness with
-                environment resulting in taste, flavor, uniformity, and
-                nutrition value. The hybrid varieties are appropriate for the
-                both commercial outdoor crop growers and greenhouse plant
-                raisers.
-              </p> */}
             </div>
 
             <div className="flex justify-center">
