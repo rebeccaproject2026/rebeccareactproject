@@ -2,7 +2,7 @@ import { useState } from "react";
 import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
 import { allProducts } from "./Comman";
-import farmImage from "../assets/images/Background/farm3.jpg";
+import farmImage from "../assets/images/Background/vegi.jpg";
 
 const Products = () => {
   const [filter, setFilter] = useState("all");
