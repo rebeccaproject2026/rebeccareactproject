@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
-import farmImage from "../assets/images/Background/bg.jpg";
+import farmImage from "../assets/images/Background/vegi.jpg";
 
 const Contact = () => {
   const [formData, setFormData] = useState({

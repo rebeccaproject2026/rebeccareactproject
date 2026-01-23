@@ -14,7 +14,7 @@ import cordialImg from "../assets/svg/Aboutus/1.svg";
 import expworkerImg from "../assets/svg/Aboutus/3.svg";
 import MordernImg from "../assets/svg/Aboutus/2.svg";
 import WhyUsImg from "../assets/images/why-us/whyus.jpg";
-import farmImage from "../assets/images/Background/bg.jpg";
+import farmImage from "../assets/images/Background/vegi.jpg";
 import ourhistoryImage from "../assets/images/history/history.jpg";
 import aboutusImg from "../assets/images/aboutourcompany/aboutcompany.jpg";
 import { FiCheckSquare } from "react-icons/fi";
@@ -155,13 +155,6 @@ const About = () => {
                 States, the company provides a rang of seeds in vegetables,
                 flowers and fruits.
               </p>
-              {/* <p className="text-gray-600 text-sm leading-relaxed">
-                Rebecca Overseas Company was Established in year
-                2012.Specializing in nursery Business Production and
-                distribution of nursery plant base in the United States, the
-                company provides a rang of seeds in vegetables, flowers &
-                fruits.
-              </p> */}
             </div>
           </div>
         </div>

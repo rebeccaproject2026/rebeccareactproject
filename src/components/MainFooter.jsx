@@ -1,5 +1,5 @@
 import { Link, useNavigate } from "react-router-dom";
-import rebeccaUnicornLogo from "../assets/img/rbc2.png";
+import rebeccaLogo from "../assets/img/rbc3.jpg";
 import { allSliderProducts } from "../pages/Comman";
 import { MdOutlineAttachEmail, MdWifiCalling } from "react-icons/md";
 import { IoEarth } from "react-icons/io5";
@@ -25,7 +25,7 @@ const MainFooter = () => {
           <div>
             <div className="mb-4">
               <img
-                src={rebeccaUnicornLogo}
+                src={rebeccaLogo}
                 alt="Rebecca Seed Company"
                 className="h-14 w-auto mb-4 rounded-md"
               />

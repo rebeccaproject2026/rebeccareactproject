@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
-import rebeccaLogo from "../assets/img/rbc2.png";
+import rebeccaLogo from "../assets/img/Logo.svg";
 import { DownOutlined } from "@ant-design/icons";
 import { Dropdown, Space } from "antd";
 import { productsData } from "../pages/Comman";
@@ -88,7 +88,7 @@ const MainHeader = () => {
                 <img
                   src={rebeccaLogo}
                   alt="rebecca-logo"
-                  className="w-[14rem]"
+                  className="w-[14rem] h-[50px]"
                 />
               </div>
             </Link>

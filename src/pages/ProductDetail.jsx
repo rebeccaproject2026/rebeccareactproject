@@ -1,5 +1,5 @@
 import { useParams, Link } from "react-router-dom";
-import farmImage from "../assets/images/Background/bg.jpg";
+import farmImage from "../assets/images/Background/vegi.jpg";
 import { productsData } from "./Comman";
 
 const ProductDetail = () => {
