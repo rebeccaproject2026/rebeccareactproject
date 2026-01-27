@@ -69,7 +69,7 @@ export const productsData = [
         description:
           "Bright red fruits, excellent medicinal properties, high antioxidant content.",
         availability: "In Stock",
-        fruitColor: "Yellow",
+        fruitColor: "Dark Green",
         fruitShape: "Regular",
         plantHeight: "300–400 cm",
         maturity: "60–70 Days",
@@ -87,7 +87,7 @@ export const productsData = [
         description:
           "Smooth skin, very uniform fruits, high yield and excellent eating quality.",
         availability: "In Stock",
-        fruitColor: "Yellow",
+        fruitColor: "Dark green",
         fruitShape: "Long spindle",
         plantHeight: "320–420 cm",
         maturity: "62–72 Days",
@@ -132,7 +132,7 @@ export const productsData = [
         description:
           "Very pungent green chilli with excellent market demand and high yield.",
         availability: "In Stock",
-        fruitColor: "White",
+        fruitColor: "Glossy with Green",
         fruitShape: "Pointed",
         plantHeight: "60–80 cm",
         maturity: "70–80 Days",
@@ -148,14 +148,14 @@ export const productsData = [
       {
         slug: "rebecca-green-capsicum",
         label: "Rebecca Green",
-          name: "Capsicum",
+        name: "Capsicum",
         image: rebeccagreenCapsicum,
         rating: 4.8,
         reviews: 19,
         description:
           "Bright yellow colour, thick walls, excellent for fresh consumption.",
         availability: "In Stock",
-        fruitColor: "White",
+        fruitColor: "Green",
         fruitShape: "Blocky",
         plantHeight: "70–90 cm",
         maturity: "65–75 Days",
@@ -172,7 +172,7 @@ export const productsData = [
         description:
           "Bright yellow colour, thick walls, excellent for fresh consumption.",
         availability: "In Stock",
-        fruitColor: "White",
+        fruitColor: "Yellow",
         fruitShape: "Blocky",
         plantHeight: "70–90 cm",
         maturity: "65–75 Days",
@@ -189,7 +189,7 @@ export const productsData = [
         description:
           "Premium red capsicum with excellent colour and size uniformity.",
         availability: "In Stock",
-        fruitColor: "White",
+        fruitColor: "Red",
         fruitShape: "Blocky",
         plantHeight: "75–95 cm",
         maturity: "68–78 Days",
@@ -212,7 +212,7 @@ export const productsData = [
         description:
           "Fast growing, tender pods, excellent for fresh market and processing.",
         availability: "In Stock",
-        fruitColor: "White",
+        fruitColor: "light Green",
         fruitShape: "Long pods",
         plantHeight: "70–90 cm",
         maturity: "60–70 Days",
@@ -227,14 +227,14 @@ export const productsData = [
       {
         slug: "corina",
         label: "Corina",
-          name: "Coriander",
+        name: "Coriander",
         image: corinacoriander,
         rating: 4.6,
         reviews: 13,
         description:
           "Dark green leaves, slow bolting, excellent aroma and shelf life.",
         availability: "In Stock",
-        fruitColor: "White",
+        fruitColor: "Dark Green",
         fruitShape: "Umbrella",
         plantHeight: "40–45 cm",
         maturity: "30–45 Days",
@@ -252,7 +252,7 @@ export const productsData = [
         description:
           "Dark green leaves, slow bolting, excellent aroma and shelf life.",
         availability: "In Stock",
-        fruitColor: "White",
+        fruitColor: "Dark Green",
         fruitShape: "Umbrella",
         plantHeight: "40–45 cm",
         maturity: "30–45 Days",
@@ -275,13 +275,14 @@ export const productsData = [
         description:
           "High yielding, good market demand, excellent for fresh market and processing.",
         availability: "In Stock",
-        fruitColor: "White",
+        fruitColor: "Greenish White",
         fruitShape: "Long pods",
         plantHeight: "70–90 cm",
         maturity: "60–70 Days",
-        additionalInfo: "Early maturing, pest resistant,Heat tolerant, high yield",
+        additionalInfo:
+          "Early maturing, pest resistant,Heat tolerant, high yield",
         category: "Vegetables",
-      }
+      },
     ],
   },
   {
@@ -296,7 +297,7 @@ export const productsData = [
         reviews: 16,
         description: "Dark green, uniform fruits, very good for fresh market.",
         availability: "In Stock",
-        fruitColor: "Yellow",
+        fruitColor: "Dark Green",
         fruitShape: "Cylindrical",
         plantHeight: "200–250 cm",
         maturity: "50–60 Days",
@@ -482,7 +483,7 @@ export const productsData = [
         description:
           "Premium variety with excellent virus tolerance and very high yield.",
         availability: "In Stock",
-        fruitColor: "White",
+        fruitColor: "Dark Green",
         fruitShape: "Regular",
         plantHeight: "150–200 cm",
         maturity: "45–50 Days",
@@ -499,7 +500,7 @@ export const productsData = [
         description:
           "Smooth tender pods, excellent eating quality and market demand.",
         availability: "In Stock",
-        fruitColor: "White",
+        fruitColor: "Dark Green",
         fruitShape: "Regular",
         plantHeight: "140–190 cm",
         maturity: "47–52 Days",
@@ -520,7 +521,7 @@ export const productsData = [
         reviews: 20,
         description: "Dark red bulbs, excellent storage life and uniform size.",
         availability: "In Stock",
-        fruitColor: "White",
+        fruitColor: "Dark Red Color",
         fruitShape: "Round Bulb",
         plantHeight: "35–45 cm",
         maturity: "90–100 Days",
@@ -542,7 +543,7 @@ export const productsData = [
         description:
           "Large round fruits, deep orange flesh, excellent for cooking & processing.",
         availability: "In Stock",
-        fruitColor: "Yellow",
+        fruitColor: "Green with white dots",
         fruitShape: "Flat Round",
         plantHeight: "Vining",
         maturity: "85–90 Days",
@@ -557,7 +558,7 @@ export const productsData = [
       {
         slug: "rebecca-white",
         label: "Rebecca White",
-          name: "Radish",
+        name: "Radish",
         image: rebeccawhiteRadish,
         rating: 4.4,
         reviews: 11,
@@ -586,7 +587,7 @@ export const productsData = [
         description:
           "Very uniform fruits with prominent ridges, excellent market quality.",
         availability: "In Stock",
-        fruitColor: "Yellow",
+        fruitColor: "Lustrous green",
         fruitShape: "Long cylindrical",
         plantHeight: "40–45 cm",
         maturity: "50–55 Days",
@@ -608,7 +609,7 @@ export const productsData = [
         description:
           "Dark green leaves, slow bolting, excellent for fresh & processing.",
         availability: "In Stock",
-        fruitColor: "—",
+        fruitColor: "Dark Green",
         fruitShape: "Oval to triangular leaves",
         plantHeight: "40–45 cm",
         maturity: "30–35 Days",
@@ -630,7 +631,7 @@ export const productsData = [
         description:
           "White spongy interior, excellent for cooking and very high yield.",
         availability: "In Stock",
-        fruitColor: "Yellow",
+        fruitColor: "Dark green",
         fruitShape: "Long & thin",
         plantHeight: "100–150 cm",
         maturity: "60–65 Days",
@@ -645,14 +646,14 @@ export const productsData = [
       {
         slug: "lyco",
         label: "Lyco",
-          name: "Tomato",
+        name: "Tomato",
         image: lycoTomato,
         rating: 4.7,
         reviews: 17,
         description:
           "High lycopene content, excellent for processing and fresh use.",
         availability: "In Stock",
-        fruitColor: "Yellow",
+        fruitColor: "Reddish-Orange",
         fruitShape: "Round",
         plantHeight: "120–150 cm",
         maturity: "70–80 Days",
@@ -669,7 +670,7 @@ export const productsData = [
         description:
           "Very good taste, firm fruits, suitable for long-distance transport.",
         availability: "In Stock",
-        fruitColor: "Yellow",
+        fruitColor: "Green with Brown base",
         fruitShape: "Round to oval",
         plantHeight: "110–140 cm",
         maturity: "68–78 Days",
@@ -708,7 +709,7 @@ export const productsData = [
         description:
           "Uniform size, crisp texture, excellent sweetness and transport quality.",
         availability: "In Stock",
-        fruitColor: "Dark green with stripes",
+        fruitColor: "Balck Green",
         fruitShape: "Oval",
         plantHeight: "Vining Type",
         maturity: "82–88 Days",
@@ -886,7 +887,8 @@ export const allSliderProducts = [
     label: "Spicy",
     slug: "chilli-spicy-green",
     image: rebeccagreenchilli,
-    description:"Very pungent green chilli with excellent market demand and high yield.",
+    description:
+      "Very pungent green chilli with excellent market demand and high yield.",
   },
   {
     id: 18,
