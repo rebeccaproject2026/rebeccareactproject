@@ -6,32 +6,63 @@ import "./ProductsPage.css";
 
 const products = [
   {
-      id: 1,
-      name: "Roses",
-      viewFileId: "1vN08Wbw6kCXmWhV_ZnjlVH0IKNQWVvRW", // Google Drive File ID for View
-      viewFileUrl: "1vN08Wbw6kCXmWhV_ZnjlVH0IKNQWVvRW",
-      downloadFileId: "1vN08Wbw6kCXmWhV_ZnjlVH0IKNQWVvRW", // Google Drive File ID for Download
-      fileName: "Roses.pdf" // Name for downloaded file
+    id: 1,
+    name: "Beet",
+    viewFileId: "1AmPjbXylV8yYyEwna23Bih1oNL-fVaDA", // Google Drive File ID for
+    viewFileUrl: "1AmPjbXylV8yYyEwna23Bih1oNL-fVaDA",
+    downloadFileId: "1AmPjbXylV8yYyEwna23Bih1oNL-fVaDA", // Google Drive File ID for Download
+    fileName: "Beet.pdf", // Name for downloaded file
   },
   {
-      id: 2,
-      name: "Morphology of flower",
-      viewFileId: "11Htxup7igqH01Ut4H2jh7DMlsadX8sRk",
-      downloadFileId: "11Htxup7igqH01Ut4H2jh7DMlsadX8sRk",
-      fileName: "Morphologyofflower.pdf"
+    id: 2,
+    name: "Bitter Gourd",
+    viewFileId: "1ObNaYO20r1MqSwEUHumiNwoTRM7pMa-L",
+    downloadFileId: "1ObNaYO20r1MqSwEUHumiNwoTRM7pMa-L",
+    fileName: "BitterGourd.pdf",
   },
   {
-      id: 3,
-      name: "Orchids",
-      viewFileId: "1Hyd09rDy-8_BRXXSGtf_kcigvVFg7L1j",
-      viewFileUrl: "1Hyd09rDy-8_BRXXSGtf_kcigvVFg7L1j",
-      downloadFileId: "1Hyd09rDy-8_BRXXSGtf_kcigvVFg7L1j",
-      fileName: "Orchids.pdf"
-  }
+    id: 3,
+    name: "Bottle Gourd",
+    viewFileId: "10mfK9I6bD8_EClnV3q4cyxOtuFNYX7Ij/",
+    viewFileUrl: "10mfK9I6bD8_EClnV3q4cyxOtuFNYX7Ij/",
+    downloadFileId: "10mfK9I6bD8_EClnV3q4cyxOtuFNYX7Ij/",
+    fileName: "BottleGourd.pdf",
+  },
+  {
+    id: 4,
+    name: "Chilli",
+    viewFileId: "1VUl37Iv-9gRPvFazDJq78exW4Bfpj_ld",
+    viewFileUrl: "1VUl37Iv-9gRPvFazDJq78exW4Bfpj_ld",
+    downloadFileId: "1VUl37Iv-9gRPvFazDJq78exW4Bfpj_ld",
+    fileName: "Chilli.pdf",
+  },
+  {
+    id: 5,
+    name: "Coriander",
+    viewFileId: "1XU42mPOI4v-cMhw0v71NG6_GGQs0V6s0",
+    viewFileUrl: "1XU42mPOI4v-cMhw0v71NG6_GGQs0V6s0",
+    downloadFileId: "1XU42mPOI4v-cMhw0v71NG6_GGQs0V6s0",
+    fileName: "Coriander.pdf",
+  },
+  {
+    id: 6,
+    name: "Cucumber",
+    viewFileId: "1P2Ap-gZ7aigvr8aCsvd7b9eHCKsqkrp-",
+    viewFileUrl: "1P2Ap-gZ7aigvr8aCsvd7b9eHCKsqkrp-",
+    downloadFileId: "1P2Ap-gZ7aigvr8aCsvd7b9eHCKsqkrp-",
+    fileName: "Cucumber.pdf",
+  },
+  {
+    id: 7,
+    name: "Marigold",
+    viewFileId: "1l5uECh0oKDROmQyhDCGKDAwR6glxZAeI",
+    viewFileUrl: "1l5uECh0oKDROmQyhDCGKDAwR6glxZAeI",
+    downloadFileId: "1l5uECh0oKDROmQyhDCGKDAwR6glxZAeI",
+    fileName: "Marigold.pdf",
+  },
 ];
 
 const ProductsPage = () => {
-
   return (
     <div className="App">
       <Header />

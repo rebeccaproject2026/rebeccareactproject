@@ -1,22 +1,22 @@
 import { QRCodeSVG } from "qrcode.react";
-import qrCodeImg from "../assets/images/qrcode/newqr.png";
+import qrCodeImg from "../assets/images/qrcode/qr-code.png";
 import "./QRCodeSection.css";
 
 const QRCodeSection = () => {
   // Get the current origin and create URL for products page
-  // const getProductsUrl = () => {
-  //   if (typeof window !== "undefined") {
-  //     return `${window.location.origin}/downloads`;
-  //   }
-  //   return "/downloads";
-  // };
-
   const getCurrentUrl = () => {
     if (typeof window !== "undefined") {
-      return window.location.origin;
+      return `${window.location.origin}/downloads`;
     }
-    return "/";
+    return "/downloads";
   };
+
+  // const getCurrentUrl = () => {
+  //   if (typeof window !== "undefined") {
+  //     return window.location.origin;
+  //   }
+  //   return "/";
+  // };
 
   const websiteUrl = getCurrentUrl();
 
