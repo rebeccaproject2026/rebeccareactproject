@@ -1,7 +1,8 @@
 import { motion } from "framer-motion";
-import { useNavigate } from "react-router-dom";
+import React from "react";
+import { useNavigate, Link } from "react-router-dom";
 import Slider from "react-slick";
-import { allSliderProducts } from "../pages/Comman";
+import { allSliderProducts } from "../data/productsData";
 
 const ProductSlider = () => {
   const navigate = useNavigate();

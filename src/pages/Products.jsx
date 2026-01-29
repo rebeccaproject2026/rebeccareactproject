@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
-import { allProducts } from "./Comman";
+import { allProducts } from "../data/productsData";
 import farmImage from "../assets/images/Background/vegi.jpg";
 
 const Products = () => {
@@ -97,16 +97,15 @@ const Products = () => {
               <button
                 key={category.id}
                 onClick={() => setFilter(category.id)}
-                className={`px-4 sm:px-6 py-2 sm:py-3 rounded-full font-medium transition-all duration-300 text-xs sm:text-sm md:text-base ${
-                  filter === category.id
-                    ? "bg-primary text-white shadow-lg"
-                    : "bg-gray-100 text-gray-700 hover:bg-gray-200"
-                }`}
+                className={`px-4 sm:px-6 py-2 sm:py-3 rounded-full font-medium transition-all duration-300 text-xs sm:text-sm md:text-base ${filter === category.id
+                  ? "bg-primary text-white shadow-lg"
+                  : "bg-gray-100 text-gray-700 hover:bg-gray-200"
+                  }`}
               >
                 {category.name} ({category.count})
               </button>
             ))}
-          </motion.div> 
+          </motion.div>
 
           {/* Products Grid */}
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4 sm:gap-6 md:gap-8">
@@ -137,17 +136,16 @@ const Products = () => {
                   </div>
                   <div className="absolute top-4 right-4">
                     <span
-                      className={`px-3 py-1 rounded-full text-xs font-medium ${
-                        product.category === "vegetables"
-                          ? "bg-green-100 text-green-800"
-                          : "bg-yellow-100 text-yellow-800"
-                      }`}
+                      className={`px-3 py-1 rounded-full text-xs font-medium ${product.category === "vegetables"
+                        ? "bg-green-100 text-green-800"
+                        : "bg-yellow-100 text-yellow-800"
+                        }`}
                     >
                       {product.category === "vegetables"
                         ? "Vegetable"
                         : product.category === "fruits"
-                        ? "Fruits"
-                        : "Flower"}
+                          ? "Fruits"
+                          : "Flower"}
                     </span>
                   </div>
                 </div>

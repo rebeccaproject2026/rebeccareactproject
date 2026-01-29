@@ -1,6 +1,7 @@
+import React from "react";
 import { Link, useNavigate } from "react-router-dom";
 import rebeccaLogo from "../assets/img/rbc3.jpg";
-import { allSliderProducts } from "../pages/Comman";
+import { allSliderProducts } from "../data/productsData";
 import { MdOutlineAttachEmail, MdWifiCalling } from "react-icons/md";
 import { IoEarth } from "react-icons/io5";
 
@@ -98,7 +99,7 @@ const MainFooter = () => {
               <div>
                 <p>Rebecca Research Unit, </p>
                 <p>S No 44, Bannerghatta Main Road, Gulakamale
-                Village, Bangalore – 560082, Karnataka (India).</p>
+                  Village, Bangalore – 560082, Karnataka (India).</p>
               </div>
             </div>
           </div>

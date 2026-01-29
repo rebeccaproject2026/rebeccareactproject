@@ -1,18 +1,11 @@
 import { useParams, Link } from "react-router-dom";
 import farmImage from "../assets/images/Background/vegi.jpg";
-import { productsData } from "./Comman";
+import { productsData, findProductBySlug } from "../data/productsData";
 
 const ProductDetail = () => {
   const { slug } = useParams();
 
-  const findProductBySlug = (slugToFind) => {
-    for (const category of productsData) {
-      const variety = category.varieties.find((v) => v.slug === slugToFind);
-      if (variety) return variety;
-    }
-    return null;
-  };
-
+  // Find the product using the helper function
   const product =
     findProductBySlug(slug) ||
     findProductBySlug("zella-yellow") ||
@@ -40,9 +33,8 @@ const ProductDetail = () => {
     Array.from({ length: 5 }, (_, i) => (
       <i
         key={i}
-        className={`fas fa-star ${
-          i < rating ? "text-yellow-400" : "text-gray-300"
-        }`}
+        className={`fas fa-star ${i < rating ? "text-yellow-400" : "text-gray-300"
+          }`}
       />
     ));
 
@@ -111,6 +103,7 @@ const ProductDetail = () => {
                     isFruit() ? "Fruit Shape" : "Flower Shape",
                     isFruit() ? product.fruitShape : product.flowerShape,
                   ],
+                  ["Texture", product.texture],
                   [
                     isFruit() ? "Fruit Weight" : "Flower Weight",
                     isFruit() ? product.fruitWeight : product.flowerWeight,
@@ -122,22 +115,30 @@ const ProductDetail = () => {
                   ["Plant Type", product.plantType],
                   ["Plant Habit", product.plantHabit],
                   ["Plant Height", product.plantHeight],
+                  ["Bolt-tolerance", product.bolttolerance],
+                  ["Tenderness", product.tenderness],
                   ["Maturity", product.maturity],
                   ["Yield", product.yield],
+                  ["Shelf Life", product.shelfLife],
+                  ["Netting", product.netting],
+                  ["Cavity", product.cavity],
+                  ["TSS", product.tss],
+                  ["Tolerance", product.tolerance],
                   ["Additional Information", product.additionalInfo],
-                ].map(([label, value], i) => (
-                  <div
-                    key={i}
-                    className="grid grid-cols-[160px_1fr] items-start gap-2"
-                  >
-                    <span className="font-semibold text-gray-800">
-                      {label}:
-                    </span>
-                    <span className="text-green-600">
-                      {getDisplayValue(value)}
-                    </span>
-                  </div>
-                ))}
+                  ["Resistance", product.resistance],
+                ]
+                  .filter(([label, value]) => value && value.trim())
+                  .map(([label, value], i) => (
+                    <div
+                      key={i}
+                      className="grid grid-cols-[160px_1fr] items-start gap-2"
+                    >
+                      <span className="font-semibold text-gray-800">
+                        {label}:
+                      </span>
+                      <span className="text-green-600">{value}</span>
+                    </div>
+                  ))}
               </div>
             </div>
           </div>

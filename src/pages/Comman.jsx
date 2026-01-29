@@ -48,10 +48,11 @@ export const productsData = [
         availability: "In Stock",
         fruitColor: "Deep red, uniform interior color",
         fruitShape: "Round and globe-shaped with a small crown and tap root",
+        texture: "Warty",
         plantHeight: "30–40 cm",
         plantType: "",
         plantHabit: "Medium green tops and an upright plant habit",
-        fruitWeight: "",
+
         fruiteSize: "",
         yield: "",
         maturity: "Maturing, taking around 52 days to grow",
