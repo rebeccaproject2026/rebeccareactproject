@@ -15,7 +15,7 @@ export const fetchDriveFiles = async () => {
         const fields = 'files(id, name, mimeType, webViewLink, webContentLink)';
 
         const response = await fetch(
-            `https://www.googleapis.com/drive/v3/files?q=${encodeURIComponent(query)}&fields=${encodeURIComponent(fields)}&key=${API_KEY}`
+            `https://www.googleapis.com/drive/v3/files?q=${encodeURIComponent(query)}&fields=${encodeURIComponent(fields)}&orderBy=name&key=${API_KEY}`
         );
         console.log(encodeURIComponent(query));
         if (!response.ok) {
