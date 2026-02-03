@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
 import farmImage from "../assets/images/Background/vegi.jpg";
+import emailjs from "@emailjs/browser";
 
 const Contact = () => {
   const [formData, setFormData] = useState({
@@ -36,16 +37,32 @@ const Contact = () => {
     e.preventDefault();
     setIsSubmitting(true);
 
-    try {
-      await new Promise((resolve) => setTimeout(resolve, 2000));
-      console.log("Form submitted:", formData);
-      setSubmitStatus("success");
-      setFormData({ name: "", email: "", subject: "", message: "" });
-    } catch (error) {
-      setSubmitStatus("error");
-    } finally {
-      setIsSubmitting(false);
-    }
+    emailjs
+      .send(
+        import.meta.env.VITE_EMAILJS_SERVICE_ID,
+        import.meta.env.VITE_EMAILJS_TEMPLATE_ID,
+        {
+          from_name: formData.name,
+          from_email: formData.email,
+          subject: formData.subject,
+          message: formData.message,
+        },
+        import.meta.env.VITE_EMAILJS_PUBLIC_KEY
+      )
+      .then(
+        () => {
+          console.log("Email sent successfully");
+          setSubmitStatus("success");
+          setFormData({ name: "", email: "", subject: "", message: "" });
+        },
+        (error) => {
+          console.error("Email sending failed:", error);
+          setSubmitStatus("error");
+        }
+      )
+      .finally(() => {
+        setIsSubmitting(false);
+      });
   };
 
   return (
@@ -258,11 +275,10 @@ const Contact = () => {
                     <button
                       type="submit"
                       disabled={isSubmitting}
-                      className={`w-full sm:w-auto px-6 py-2.5 sm:py-3 rounded-full font-semibold font-montserrat transition-all duration-300 text-xs sm:text-sm uppercase ${
-                        isSubmitting
-                          ? "bg-gray-400 cursor-not-allowed text-white"
-                          : "bg-primary hover:bg-green-600 text-white"
-                      }`}
+                      className={`w-full sm:w-auto px-6 py-2.5 sm:py-3 rounded-full font-semibold font-montserrat transition-all duration-300 text-xs sm:text-sm uppercase ${isSubmitting
+                        ? "bg-gray-400 cursor-not-allowed text-white"
+                        : "bg-primary hover:bg-green-600 text-white"
+                        }`}
                     >
                       {isSubmitting ? (
                         <span className="flex items-center justify-center">
